@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Socket.io</title>
+    </head>
+ 
+    <body>
+        <h1>Communication avec socket.io ! </h1>
+        <h1>Modifie _comment.json pour pusher vers l'appli frontale </h1>
+        <div id="result">waiting</div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+
+            // var a = document.getElementById("result");
+            // for (var i in a )
+            //     console.log( i );// = 'goooooooooooooooood';
+            // a.innerText = 'toto';
+            // alert(a.innerText);
+
+            var socket = io.connect('http://localhost:8080');
+
+            // var pseudo = prompt('Pseudo?');
+            // socket.emit('newUser',pseudo);
+
+            socket.on('message', function(message) {
+                alert('Le serveur a un message pour vous : ' + message);
+            });
+
+            socket.on('notification', function(notif){
+                var size = 0;
+                for (var i in notif)
+                    size ++;
+                console.log(size + typeof(notif))
+                document.getElementById("result").innerText =JSON.stringify(eval("("+ notif+ ")"));
+                // console.log('>'+JSON.stringify(notif) );
+
+            });
+
+        </script>
+    </body>
+</html>

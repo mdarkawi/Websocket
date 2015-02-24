@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'xml2json' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'xml2json', null ]
+6 verbose cache add name=undefined spec="xml2json" args=["xml2json",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'xml2json',
+7 verbose parsed url   path: 'xml2json',
+7 verbose parsed url   href: 'xml2json' }
+8 silly lockFile 4a765045-xml2json xml2json
+9 verbose lock xml2json /home/madi/.npm/4a765045-xml2json.lock
+10 silly lockFile 4a765045-xml2json xml2json
+11 silly lockFile 4a765045-xml2json xml2json
+12 verbose addNamed [ 'xml2json', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 58d55085-xml2json xml2json@
+15 verbose lock xml2json@ /home/madi/.npm/58d55085-xml2json.lock
+16 silly addNameRange { name: 'xml2json', range: '*', hasData: false }
+17 verbose request where is /xml2json
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 783612cab62a37e5
+20 verbose url raw /xml2json
+21 verbose url resolving [ 'https://registry.npmjs.org/', './xml2json' ]
+22 verbose url resolved https://registry.npmjs.org/xml2json
+23 verbose request where is https://registry.npmjs.org/xml2json
+24 info trying registry request attempt 1 at 18:15:10
+25 verbose etag "C3R4QUB4F45RSEL0L09UKDYB3"
+26 http GET https://registry.npmjs.org/xml2json
+27 http 200 https://registry.npmjs.org/xml2json
+28 silly registry.get cb [ 200,
+28 silly registry.get   { date: 'Tue, 24 Feb 2015 17:14:24 GMT',
+28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 silly registry.get     etag: '"6T1H9WVHJ2VFNCIWBOYAGVXCX"',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     'content-length': '18238',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '36',
+28 silly registry.get     'x-served-by': 'cache-ams4132-AMS',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1424798064.117524,VS0,VE0',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly addNameRange number 2 { name: 'xml2json', range: '*', hasData: true }
+30 silly addNameRange versions [ 'xml2json',
+30 silly addNameRange   [ '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.1',
+30 silly addNameRange     '0.2.2',
+30 silly addNameRange     '0.2.3',
+30 silly addNameRange     '0.2.4',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.3.1',
+30 silly addNameRange     '0.3.2',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.5.0',
+30 silly addNameRange     '0.5.1',
+30 silly addNameRange     '0.6.0',
+30 silly addNameRange     '0.6.1' ] ]
+31 verbose addNamed [ 'xml2json', '0.6.1' ]
+32 verbose addNamed [ '0.6.1', '0.6.1' ]
+33 silly lockFile 93dee6f4-xml2json-0-6-1 xml2json@0.6.1
+34 verbose lock xml2json@0.6.1 /home/madi/.npm/93dee6f4-xml2json-0-6-1.lock
+35 silly lockFile 4588fb2d--org-xml2json-xml2json-0-6-1-tgz https://registry.npmjs.org/xml2json/-/xml2json-0.6.1.tgz
+36 verbose lock https://registry.npmjs.org/xml2json/-/xml2json-0.6.1.tgz /home/madi/.npm/4588fb2d--org-xml2json-xml2json-0-6-1-tgz.lock
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/xml2json/-/xml2json-0.6.1.tgz',
+37 verbose addRemoteTarball   '43883d09e4369f96b83316df833cf1fc20d6c3f1' ]
+38 info retry fetch attempt 1 at 18:15:10
+39 verbose fetch to= /tmp/npm-20180-iggWUrRl/registry.npmjs.org/xml2json/-/xml2json-0.6.1.tgz
+40 http GET https://registry.npmjs.org/xml2json/-/xml2json-0.6.1.tgz
+41 http 200 https://registry.npmjs.org/xml2json/-/xml2json-0.6.1.tgz
+42 silly lockFile 4588fb2d--org-xml2json-xml2json-0-6-1-tgz https://registry.npmjs.org/xml2json/-/xml2json-0.6.1.tgz
+43 silly lockFile 4588fb2d--org-xml2json-xml2json-0-6-1-tgz https://registry.npmjs.org/xml2json/-/xml2json-0.6.1.tgz
+44 silly lockFile 93dee6f4-xml2json-0-6-1 xml2json@0.6.1
+45 silly lockFile 93dee6f4-xml2json-0-6-1 xml2json@0.6.1
+46 silly lockFile 58d55085-xml2json xml2json@
+47 silly lockFile 58d55085-xml2json xml2json@
+48 error Error: EACCES, mkdir '/home/madi/.npm/xml2json/0.6.1'
+48 error  { [Error: EACCES, mkdir '/home/madi/.npm/xml2json/0.6.1']
+48 error   errno: 3,
+48 error   code: 'EACCES',
+48 error   path: '/home/madi/.npm/xml2json/0.6.1' }
+49 error Please try running this command again as root/Administrator.
+50 error System Linux 3.5.0-54-generic
+51 error command "/usr/bin/node" "/usr/bin/npm" "install" "xml2json"
+52 error cwd /home/madi/Documents/AngularJs/testSocketIO
+53 error node -v v0.10.33
+54 error npm -v 1.4.28
+55 error path /home/madi/.npm/xml2json/0.6.1
+56 error code EACCES
+57 error errno 3
+58 error stack Error: EACCES, mkdir '/home/madi/.npm/xml2json/0.6.1'
+59 verbose exit [ 3, true ]
