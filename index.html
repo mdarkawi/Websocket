@@ -13,11 +13,7 @@
         <script src="/socket.io/socket.io.js"></script>
         <script>
 
-            // var a = document.getElementById("result");
-            // for (var i in a )
-            //     console.log( i );// = 'goooooooooooooooood';
-            // a.innerText = 'toto';
-            // alert(a.innerText);
+
 
             var socket = io.connect('http://localhost:8080');
 
@@ -29,12 +25,8 @@
             });
 
             socket.on('notification', function(notif){
-                var size = 0;
-                for (var i in notif)
-                    size ++;
-                console.log(size + typeof(notif))
+                
                 document.getElementById("result").innerText =JSON.stringify(notif) ;
-                // console.log('>'+JSON.stringify(notif) );
 
             });
 
