@@ -31,18 +31,10 @@ io.sockets.on('connection', function (socket) {
 
     fs.watch(  jsonPath , function(curr, prev){
 
-        // console.log('curr: '+curr);
-        // console.log('prev: '+prev);
-
         fs.readFile( jsonPath, function(err, data){            
 
             console.log('0 '+data);
-            // var json = data;
-            // console.log('1 '+json );
-            // console.log('err: '+JSON.stringify( json));
-            // console.log('data: '+JSON.stringify(json));
-            
-            // console.log('read file');
+            var json = JSON.parse(data);
 
             if(err){
                 console.log('erroooor')
@@ -50,7 +42,7 @@ io.sockets.on('connection', function (socket) {
             }
             console.log('no erroooor');
 
-            socket.emit('notification', JSON.stringify(data));
+            socket.emit('notification', json);
 
 
         });
